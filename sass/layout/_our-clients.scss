@@ -25,20 +25,25 @@
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   align-items: center;
- }
+
+      &:not(:last-child) {
+      margin-right: 30px;
+    }
+  
+    &:hover {
+      border: 1px solid var(--accent-color);
+      
+          .clients-logo-svg{
+            fill: var(--accent-color);
+          } 
+    }
+}
 
 .clients-logo-svg {
 fill: #AFB1B8;
  }
 
-.our-clients-list-item:not(:last-child) {
-  margin-right: 30px;
-}
 
-.our-clients-list-item:hover .clients-logo-svg{
-  fill: var(--accent-color);
-}
 
-.our-clients-list-item:hover {
-  border: 1px solid var(--accent-color);
-}
+
+
