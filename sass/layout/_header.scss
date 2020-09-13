@@ -1,160 +1,41 @@
 .header {
-  background-color: var(--primery-white-color);
+  background-color: $primery-white-color;
   border: 1px solid #ECECEC;
-  
-     .conteiner {
-  display: flex;
-  align-items: center;
-  }
 
-      .navigation {
-  display: flex;
-  align-items: center;
-  }
+    .link {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding: 25px 0;
+    position: relative;
+    } 
 
-   .link {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  padding: 25px 0;
-  position: relative;  
-  
-      &:hover,
-      &:focus {
-        color: var(--accent-color);
+      .link:hover,
+      .link:focus {
+        color: $accent-color;
       }
-  }
 
-     .link.current {
-    color: var(--accent-color);} 
+      .link.current {
+      color: $accent-color;
+    }
 }
-
-
-.navigation-list {
-  display: flex;
-}
-
-.navigation-list-item {
-  width: max-content; 
-
-  &:not(:last-child) {
-  margin-right: 50px;
- }
- 
-   .link {
-  display: inline-block;
-  }
-}
-
-.link.current::after {
-    content: "";
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    display: block;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 0;
-    
-    &:hover::after {color: var(--accent-color);}
-}
-
-.link:hover.current::after {
-    background-color: var(--accent-color);
-}
-
 /* ========== Logo ========== */ 
 
 .logo {
   display: flex;
   margin-right: 93px;
-  color: var(--title-text-color);
+  color: $title-text-color;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   text-decoration: none;
   line-height: 1.19;  
 
-  & > span {
-    color: var(--accent-color);
-  }
-  }
-  
-/*=========== Контакты (header) ===========*/
-
-.contact-list {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  
-   .phone {
-  color: var(--primery-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  
-    &:hover,
-    &:focus {color: var(--accent-color);}
-}
-
-   .link {
-    color: var(--primery-text-color);
-    
-      &:hover,
-      &:focus {
-        color: var(--accent-color);
+    & > span {
+    color: $accent-color;
     }
-  }
-
-  .phone:hover .contact-list-item-svg {
-    fill: var(--accent-color);
 }
-
-   .link:hover .contact-list-item-svg {
-    fill: var(--accent-color);
-}
-
-}
-
-
-.contact-list-item {
-  display: flex;
-  align-items: center; 
-
-    &:not(:last-child) {
-      margin-right: 50px;
-  }
-
-    .link,
-    .phone {
-      display: flex;
-      align-items: center; 
-}
-}
-
-.contact-list-item-svg {
-  fill: var(--primery-text-color);
-  margin-right: 10px;
-}
-
-.svg-email {
-  width: 16px;
-  height: 12px;
-  cursor: pointer;
-}
-
-.svg-phone {
-  width: 10px;
-  height: 16px;
-  cursor: pointer;
-}
-
-
-
-
+  

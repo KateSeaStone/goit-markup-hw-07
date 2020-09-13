@@ -1,6 +1,6 @@
 /* Герой */
 .hero-title {
-  color: var(--primery-white-color);;
+  color: $primery-white-color;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -14,12 +14,12 @@
   border-radius: 4px;
   border: transparent;
   font-family: inherit;
-  color: var(--primery-white-color);
+  color: $primery-white-color;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   text-decoration: none;
   text-align: center;
   padding: 10px 32px;
@@ -27,14 +27,13 @@
   height: 50px;
   
   &:hover
- {color: var(--accent-color);
-  background-color: var(--primery-white-color);
+ {color: $accent-color;
+  background-color: $primery-white-color;
   }
 
-  &:focus {
-  outline: none;
-}
-
+    &:focus {
+    outline: none;
+  }
 }
 
 .section-hero {
